@@ -4,6 +4,9 @@
     }
     .main{
         width: 330px;
+        display: box;
+        margin: 0 auto;
+        margin-top: 5vh;
     }
     .password-out{
         width: 270px;
