@@ -1,20 +1,109 @@
-@media screen and (max-width: 400px) {
-    body{
-        height: 70vh;
+@media screen and (max-width: 600px){
+    #desktop_nav{
+        display: none;
     }
-    .main{
-        width: 330px;
-        display: box;
-        margin: 0 auto;
-        margin-top: 5vh;
+    #hamburger-nav{
+        display: flex;
     }
-    .password-out{
-        width: 270px;
-    }
-    .radio-container{
+
+    #profile{
         display: block;
     }
-    .button{
-        margin-right: 1.5rem;
+
+    .section_pic-container{
+        width: 70%;
+        height: 32%;
+        margin: auto;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    section {
+        margin: 0 1rem;
+        display: block;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        height: auto;
+    }
+
+    .section_text_p2{
+        font-size: 1.2rem;
+    }
+
+    .section_text {
+        margin-top: 1rem;
+    }
+
+    .top{
+        display: block;
+        height: auto;
+        width: auto;
+    }
+
+    .section_pic-container2{
+        width: 100%;
+        margin-left: 3.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .about-pic{
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+
+    .about-details-container{
+        display: block;
+    }
+
+    .about-container{
+        display: block;
+    }
+
+    .edu-container{
+        display: block;
+    }
+
+    .edu-block{
+        margin: auto;
+    }
+
+    .text-container{
+        display: block;
+    }
+
+    .text-left{
+        font-size: 16px;
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    .info-list{
+        font-size: 14px;
+    }
+
+    .reward-certificate{
+        width: 85%;
+    }
+
+    .reward-description{
+        width: 100%;
+    }
+
+    .project-container {
+        grid-template-columns: repeat(1, 100%);
+        gap: 1rem;
+        height: auto;
+    }
+
+    article {
+        height: 85%;
+        margin-bottom: 5rem;
+    }
+
+    #projects{
+        height: fit-content;
     }
 }
