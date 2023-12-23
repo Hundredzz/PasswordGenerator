@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./icon/favicon-32x32.png">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <div class="main">
+        <h1>Password Generator</h1>
+        
+        <div class="password-display">
+            <input type="text" placeholder="Password" class="password-out" id="Password">
+            <img src="./icon/copyicon.png" onclick="copyPassword()">
+        </div>
+
+        <div class="passgen-container">
+            <div class="slider-bar">
+                <p class="slider-description">Lenght</p>
+                <p id="slider-value">13</p>
+                <input type="range" min="6" max="20" step="1" id="slider" class="slider">
+                <div class="slider-thumb"></div>
+                <div class="progress"></div>
+            </div>
+            <div class="radio-container">
+                <div>
+                    <article>
+                        <input type="checkbox" id="Uppercase" class="toggle">
+                        <label for="Uppercase" class="button"></label>
+                        <p>Uppercase</p>
+                    </article>
+
+                    <article>
+                        <input type="checkbox" id="Lowercase" class="toggle">
+                        <label for="Lowercase" class="button"></label>
+                        <p>Lowercase</p>
+                    </article>
+                </div>
+
+                <div>
+                    <article>
+                        <input type="checkbox" id="Number" class="toggle">
+                        <label for="Number" class="button"></label>
+                        <p>Number</p>
+                    </article>
+
+                    <article>
+                        <input type="checkbox" id="Symbol" class="toggle">
+                        <label for="Symbol" class="button"></label>
+                        <p>Symbol</p>
+                    </article>
+                </div> 
+            </div>
+            <button onclick="createPassword()">GENERATE</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
